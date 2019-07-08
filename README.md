@@ -29,9 +29,3 @@ Terraform reads the custom provider binaries from two locations:
   * **~/.terraform.d/plugins/linux_amd64** on Linux  
 
 Place the binary in plugins directory for your platform and run **terraform init** in your project to load custom plugin configuration.
-
-If you want to compile the binary your self make sure you have GO installed and $PATH set correctly, clone this repo and run:
-```
-$ go build -o terraform-provider-assert
-```
-this will produce the binary in your current dir, just move it to your plugins dir and initialize terraform.
