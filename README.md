@@ -16,9 +16,9 @@ there is no need to explicitly initialize provider in your .tf files with the **
 ## dynamic vs static variables in test condition
 Terraform validates values at two stages:  
 * during validation ( static variables passed to terraform or computed during validation )
-* during apply ( dynamic variables know after resource is created )
+* during apply ( dynamic variables known after resource is created )
 
-terraform-provider-assert works in both stages however if you pass condition based on computed values from resources it will only **throw** during apply stage.
+terraform-provider-assert works in both stages, however, if you pass condition based on value computed from resource data it will only **throw** during apply stage.
 
 ## Installation
 Terraform reads the custom provider binaries from two locations:
