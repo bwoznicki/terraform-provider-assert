@@ -23,7 +23,10 @@ terraform-provider-assert works in both stages however if you pass condition bas
 ## Installation
 Terraform reads the custom provider binaries from two locations:
 * current location where terraform main.tf is run from 
-* **%APPDATA%\terraform.d\plugins** on Windows and **~/.terraform.d/plugins** on all other platforms.
+* and 
+  * **%APPDATA%\terraform.d\plugins\windows_amd64** on Windows  
+  * **~/.terraform.d/plugins/darwin_amd64** on Mac  
+  * **~/.terraform.d/plugins/linux_amd64** on Linux  
 
 Place the binary in plugins directory for your platform and run **terraform init** in your project to load custom plugin configuration.
 
